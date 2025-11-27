@@ -1,12 +1,12 @@
-//your JS code here. If required.
-let angle = 0; // Initialize the rotation angle
+let angle = 0;
 
-// Function to rotate the line
 function rotateLine() {
-    const line = document.getElementById('line');
-    angle += 2; // Increase the angle by 2 degrees
-    line.style.transform = `rotate(${angle}deg)`; // Apply the rotation
+	const line1 = document.getElementById('line');
+
+	angle += 2;
+
+	line1.style.transform = `rotate(${angle})`;
+	
 }
 
-// Set an interval to rotate the line every 20 milliseconds
 setInterval(rotateLine, 20);
